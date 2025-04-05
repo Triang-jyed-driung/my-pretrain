@@ -1,7 +1,7 @@
 CUDA_VISIBLE_DEVICES=0 python main.py \
   --model_name fla-hub/rwkv7-0.1B-g1 \
   --compile_model \
-  --data_file /home/zhangping/zrc/RWKV-LM-v6/RWKV-v5/data/rwkv_mypile_v2 \
+  --data_file /place/to/the/bin \
   --ctx_len 4096 \
   --bsz 28 \
   --strategy ddp \
@@ -16,6 +16,7 @@ CUDA_VISIBLE_DEVICES=0 python main.py \
   --precision bf16-true \
   --wandb r7_0b1_g1 \
   --no_decay_1d
-
+  
+  # --data_file: directory to the bin/idx file (no suffix)
   # --config_args '{"fuse_cross_entropy":true}' \
   # --model_args {"_attn_implementation":"flash_attention_2"} \
