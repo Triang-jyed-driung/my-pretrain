@@ -1,7 +1,7 @@
-CUDA_VISIBLE_DEVICES=7 python main.py \
+python main.py \
   --model_name /home/zhangping/zrc/rwkv-lm/rwkv-lm/RWKV-v5/out/fla \
   --config_args '{"fuse_norm":false,"fuse_cross_entropy":true}' \
-  --data_file /home/zhangping/zrc/rwkv-lm/RWKV-v5/data/minipile \
+  --data_file ../rwkv-lm/RWKV-v5/data/minipile \
   --compile_model \
   --rwkv_lr \
   --ctx_len 512 \
