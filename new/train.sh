@@ -1,5 +1,5 @@
 python main.py \
-  --model_name /home/zhangping/zrc/rwkv-lm/rwkv-lm/RWKV-v5/out/fla \
+  --model_name ../rwkv-lm/RWKV-v5/out/fla \
   --config_args '{"fuse_norm":false,"fuse_cross_entropy":true}' \
   --data_file ../rwkv-lm/RWKV-v5/data/minipile \
   --compile_model \
